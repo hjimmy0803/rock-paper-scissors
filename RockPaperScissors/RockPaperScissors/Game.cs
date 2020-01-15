@@ -65,7 +65,7 @@ namespace RockPaperScissors
 
         public void RunGame()
         {
-            while (p1.score < 2 || p2.score < 2)
+            while (p1.score < 2 && p2.score < 2)
             {
                 //Console.WriteLine("Player 1, choose from these following options: \n 1.Rock \n 2.Paper \n 3.Scissors \n 4.Lizard \n 5.Spock");
                 //int player1Choice = int.Parse(Console.ReadLine());
@@ -82,34 +82,34 @@ namespace RockPaperScissors
 
                 if (p1.playerChoice == p2.playerChoice)
                 {
-                    Console.WriteLine("this is a tie please try again");
+                    Console.WriteLine("Draw!! Try again.");
                     Console.ReadLine();
                 }
-                else if (player1Choice == 1 && (player2Choice == 3 || player2Choice == 5))
+                else if (p1.playerChoice == 1 && (p2.playerChoice == 3 || p2.playerChoice == 5))
                 {
                     p1.score++;
                     Console.WriteLine($"Player one {p1.score} score");
                     Console.ReadLine();
                 }
-                else if (player1Choice == 3 && (player2Choice == 2 || player2Choice == 5))
+                else if (p1.playerChoice == 3 && (p2.playerChoice == 2 || p2.playerChoice == 5))
                 {
                     p1.score++;
                     Console.WriteLine($"Player one {p1.score} score");
                     Console.ReadLine();
                 }
-                else if (player1Choice == 2 && (player2Choice == 1 || player2Choice == 4))
+                else if (p1.playerChoice == 2 && (p2.playerChoice == 1 || p2.playerChoice == 4))
                 {
                     p1.score++;
                     Console.WriteLine($"Player one {p1.score} score");
                     Console.ReadLine();
                 }
-                else if (player1Choice == 4 && (player2Choice == 3 || player2Choice == 1))
+                else if (p1.playerChoice == 4 && (p2.playerChoice == 3 || p2.playerChoice == 1))
                 {
                     p1.score++;
                     Console.WriteLine($"Player one {p1.score} score");
                     Console.ReadLine();
                 }
-                else if (player1Choice == 5 && (player2Choice == 4 || player2Choice == 2))
+                else if (p1.playerChoice == 5 && (p2.playerChoice == 4 || p2.playerChoice == 2))
                 {
                     p1.score++;
                     Console.WriteLine($"Player one {p1.score} score");
