@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    class Computer:Player
+    class Computer : Player
     {
+        
+
        
+         
+
+
+        public override void ChooseGesture()
+        {
+            Random random = new Random();
+            playerChoice = random.Next(1, 5);
+        }
     }
 }

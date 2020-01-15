@@ -10,13 +10,8 @@ namespace RockPaperScissors
     {
         public int playerChoice;
         public int score;
-
-
-        public Player(int playerChoice, int score) 
-        {
-            this.playerChoice = playerChoice;
-            this.score = score;
-        }
+        public string name;
+        
 
         public abstract void ChooseGesture();
 
