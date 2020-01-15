@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    class Computer:Player
+    class Human:Player
     {
-       
+        public override void 
+        {
+            
+        }
     }
 }
