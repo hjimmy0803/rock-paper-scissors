@@ -73,9 +73,12 @@ namespace RockPaperScissors
                 p1.ChooseGesture();
                 p2.ChooseGesture();
 
-                //Console.WriteLine("Player 2, choose from these following options: \n 1.Rock \n 2.Paper \n 3.Scissors \n 4.Lizard \n 5.Spock");
-                //int player2Choice = int.Parse(Console.ReadLine());
-                //Console.WriteLine(player2Choice);
+                //Console.WriteLine("Player 1, please choose from the following: \n 1) rock \n 2) paper \n 3) scissors \n 4) lizard \n 5) spock");
+                //p1.playerChoice = int.Parse(Console.ReadLine());
+                //Console.WriteLine(p1.playerChoice);
+                //Console.Clear();
+
+               
 
                 Console.WriteLine($"p1: {p1.playerChoice} p2: {p2.playerChoice}");
                 Console.ReadLine();

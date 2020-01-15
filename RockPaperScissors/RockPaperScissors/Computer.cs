@@ -11,9 +11,7 @@ namespace RockPaperScissors
         
 
        
-         
-
-
+        
         public override void ChooseGesture()
         {
             Random random = new Random();

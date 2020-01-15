@@ -10,7 +10,6 @@ namespace RockPaperScissors
     {
         public int playerChoice;
         public int score;
-        public string name = "Jarvis";
         
 
         public abstract void ChooseGesture();
