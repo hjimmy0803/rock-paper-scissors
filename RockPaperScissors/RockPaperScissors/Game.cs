@@ -44,7 +44,7 @@ namespace RockPaperScissors
                 p2 = new Computer();
                 //p1.ChooseGesture();
                 //p2.ChooseGesture();
-                p2.name = "Jarvis";
+               
 
             }
             else if (userChoice == 2)
@@ -121,6 +121,21 @@ namespace RockPaperScissors
                     Console.WriteLine($"Player two {p2.score} score");
                     Console.ReadLine();
                 }
+
+               
+            }
+        }
+        public void DetermineGameWinner() 
+        {
+            if (p1.score == 2)
+            {
+                Console.WriteLine("Game winner: Player 1");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine("Game winner: Player 2");
+                Console.ReadLine();
             }
         }
     }

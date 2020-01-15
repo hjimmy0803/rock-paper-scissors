@@ -13,6 +13,7 @@ namespace RockPaperScissors
             Game game = new Game();
             game.InitGame();
             game.RunGame();
+            game.DetermineGameWinner();
         }
     }
 }
